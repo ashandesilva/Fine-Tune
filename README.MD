@@ -44,6 +44,18 @@ Fine-Tune/
 
 ## Scripts
 
+Since after running 
+```bash
+python split_train_val_test.py --merged_coco annotations_v1/merged_coco.json --out_dir annotations_v1 --train_ratio 0.7 --val_ratio 0.15 --test_ratio 0.15 --seed 42
+```
+the output was
+```bash
+Train set: 712 images, 156 annotations => annotations_v1\train_coco.json
+Val set: 165 images, 0 annotations => annotations_v1\val_coco.json
+Test set: 166 images, 54 annotations => annotations_v1\test_coco.json
+```
+Decided to change the merge_annotation.py file to filter out all images not in that set. This ensures that every image in the final JSON has at least one annotation.
+
 ### 1. `merge_annotations.py`
 - **Purpose**: Merge multiple COCO annotation files into a single “merged_coco.json,” excluding images that have zero annotations.
 - **Usage**:
@@ -54,9 +66,14 @@ Fine-Tune/
   ```
 - **Notes**: 
   - It automatically offsets image/annotation IDs so there are no collisions.
+  - It filters out images with zero annotations.
   - Next time you add new annotation files (e.g., more frames or more classes), 
 just rerun the merge script (possibly with more --ann_files), then rerun the split script. 
 You’ll get an updated set of train/val/test JSONs that keep frames from each video ID in the same subset.
+   - __also in the output merge_coco.json the files image id will not go from 1 - 210 even though there are 210 annotaion in both files, since it skips imgs that are not annotated img id number may skip and start at 500.__
+   - __From a training perspective: it’s not a problem. The COCO standard only cares that:__
+      1. __Each image ID is unique.__
+      2. __Each annotation references a valid image ID.__
 
 ### 2. `split_train_val_test.py`
 - **Purpose**: Split the merged annotation file into train/val/test sets, ensuring all frames from the same video are placed in the same subset.
