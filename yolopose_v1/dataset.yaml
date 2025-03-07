@@ -1,0 +1,10 @@
+path: C:/Users/UDESIAS/Documents/FYP/Fine-Tune/yolopose_v1/data
+train: images/train
+val: images/val
+test: images/test
+
+kpt_shape: [17, 3]  # Assuming 17 keypoints with (x, y, visibility)
+flip_idx: [0, 2, 1, 4, 3, 6, 5, 8, 7, 10, 9, 12, 11, 14, 13, 16, 15]
+
+names:
+  0: person
