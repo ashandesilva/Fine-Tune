@@ -1,0 +1,17 @@
+# yolopose11.yaml (snippet)
+model:
+  type: YOLOPose11
+  backbone:
+    # Pretrained backbone settings
+    pretrained: yolopose11.pt
+  head:
+    num_keypoints: 17
+    # other head settings...
+
+train_cfg:
+  epochs: 50
+  optimizer:
+    type: Adam
+    lr: 0.0005
+  batch_size: 8
+  # include augmentations for rotation, scale, flip, etc.

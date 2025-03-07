@@ -1,0 +1,10 @@
+# Path to the split annotation files
+train: annotations_v1/split/train_coco.json
+val: annotations_v1/split/val_coco.json
+test: annotations_v1/split/test_coco.json
+
+# Root directory for images (the merged folder contains all images that were annotated)
+img_dir: data_v1/merged
+
+# Number of keypoints and other dataset-specific parameters:
+kpt_shape: 17
