@@ -6,7 +6,7 @@ Splits a merged COCO annotation file into train/val/test sets,
 grouping images by 'video ID' so that frames of the same video stay in the same split.
 
 Usage:
-python split_train_val_test.py --merged_coco annotations_v1/merged_coco.json --out_dir annotations_v1 --train_ratio 0.7 --val_ratio 0.15 --test_ratio 0.15 --seed 42
+python split_train_val_test.py --merged_coco annotations_v1/merged_coco.json --out_dir annotations_v1/split --train_ratio 0.7 --val_ratio 0.15 --test_ratio 0.15 --seed 42
 
   python split_train_val_test.py \
     --merged_coco annotations_v1/merged_coco.json \
