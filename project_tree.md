@@ -1,0 +1,29 @@
+```
+└── Fine-Tune
+    └── annotations_v1
+        └── correct_n2_3_7_100.json
+        └── lumbar_3_7_dell_111.json
+        └── merged_coco.json
+        └── merged1_coco.json
+        └── split
+            └── test_coco.json
+            └── train_coco.json
+            └── val_coco.json
+    └── data_v1
+        └── Correct_n2_3_7_100
+            └── 52723_8_10.jpg
+            └── 52723_8_12.jpg
+            └── 52723_8_19.jpg
+        └── lumbar_3_7_dell_111
+            └── 52701_11_14.jpg
+            └── 52701_11_15.jpg
+            └── 52701_11_21.jpg
+        └── merged
+            └── 52701_11_14.jpg
+            └── 52701_11_15.jpg
+            └── 52701_11_21.jpg
+    └── .gitignore
+    └── merge_annotations.py
+    └── README.MD
+    └── split_train_val_test.py
+```
