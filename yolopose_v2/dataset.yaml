@@ -1,4 +1,4 @@
-path: C:/Users/UDESIAS/Documents/FYP/Fine-Tune/yolopose_v1/data
+path: C:/Users/UDESIAS/Documents/FYP/Fine-Tune/yolopose_v2/data
 train: images/train
 val: images/val
 test: images/test
