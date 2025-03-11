@@ -24,5 +24,6 @@
 - Use __yolopose_v3\split-img-txt-yolo.py__ Split data both images and labels into Train Test Val in seperate folders
 - This will create yolopose_v3\data\images and yolopose_v3\data\labels
 
-
+#### Clean annotations
+- Since yolo set annotations above 1 and below 0 as corupted this script __yolopose_v3\yolo_annot_correction.py__ will change any value abouve 1 and below 0 into 0 0 0
 
