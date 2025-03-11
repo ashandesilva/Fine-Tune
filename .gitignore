@@ -1,3 +1,8 @@
 /venv
 yolopose_v1/yolo11m-pose.pt
 yolopose_v1/yolo11n-pose.pt
+yolopose_v1/cvat-export-yolo-210frames
+yolopose_v2/yolo11m-pose.pt
+yolopose_v2/yolo11n-pose.pt
+yolopose_v3/yolo11m-pose.pt
+yolopose_v3/yolo11n-pose.pt
