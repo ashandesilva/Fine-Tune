@@ -27,3 +27,6 @@
 #### Clean annotations
 - Since yolo set annotations above 1 and below 0 as corupted this script __yolopose_v3\yolo_annot_correction.py__ will change any value abouve 1 and below 0 into 0 0 0
 
+#### Fine Tune YOLO
+- Run __yolopose_v3\train.ipynb__
+
