@@ -2,6 +2,40 @@
 
 # Fine-Tune Pose Estimation Project
 
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1. **Clone the Repository**: Clone this repository to your local machine using:
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. **Navigate to the Project Directory**: Change into the project directory:
+   ```bash
+   cd Fine-Tune
+   ```
+
+3. **Set Up a Virtual Environment** (optional but recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+4. **Install Dependencies**: Install the required Python packages using the `requirements.txt` file:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Run Scripts**: You can now run the scripts provided in the repository. For example, to merge annotations, use:
+   ```bash
+   python merge_annotations.py --ann_files annotations_v1/Correct_n2_3_7_100.json annotations_v1/lumbar_3_7_dell_111.json --out annotations_v1/merged_coco.json
+   ```
+
+6. **Train the Model**: Open the `train.ipynb` notebook in Jupyter and follow the instructions to train the YOLOPose model.
+
+Ensure that all paths in the scripts and notebooks are correctly set to your local environment.
+
 This repository contains scripts and data for fine-tuning pose-estimation models on a custom dataset of human exercise frames. The dataset currently has two annotation sets:
 - **Correct_n2_3_7_100** for correct form
 - **lumbar_3_7_dell_111** for lumbar error
