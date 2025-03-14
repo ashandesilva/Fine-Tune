@@ -1,0 +1,4 @@
+python .\split_img_txt_yolo.py    
+Train set: 638 label files and 638 image files from 47 videos
+Validation set: 170 label files and 170 image files from 13 videos
+Test set: 94 label files and 94 image files from 8 videos

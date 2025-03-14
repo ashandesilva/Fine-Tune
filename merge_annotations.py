@@ -11,6 +11,9 @@ python merge_annotations.py --ann_files annotations_v1/Correct_n2_3_7_100.json a
 For v3
 python merge_annotations.py --ann_files annotations_v3/t5-sherul-300-395-correct.json annotations_v3\lumbar-K-1.1-160.json --out annotations_v3/merged_coco.json
 
+For v4
+python merge_annotations.py --ann_files annotations_v4/correct-phase-I-578Done-Mar14.json annotations_v4/lumbar-phase-I-322Done-Mar14.json --out annotations_v4/merged_coco.json
+
 Next time you add new annotation files (e.g., more frames or more classes), 
 just rerun the merge script (possibly with more --ann_files), then rerun the split script. 
 You’ll get an updated set of train/val/test JSONs that keep frames from each video ID in the same subset.

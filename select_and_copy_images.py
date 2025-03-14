@@ -3,9 +3,9 @@ import json
 import shutil
 
 # Paths
-json_file_path = 'annotations_v3/merged_coco.json'
-source_dirs = ['data_v3/correct_extra_frames_proccessed', 'data_v3/lumbar_extra_frames_proccessed']
-target_dir = 'data_v3/merged'
+json_file_path = 'annotations_v4/merged_coco.json'
+source_dirs = ['data_v4/img-correct-phase-I-578Done-Mar14', 'data_v4/img-lumbar-phase-I-322Done-Mar14']
+target_dir = 'data_v4/merged'
 
 # Create target directory if it doesn't exist
 os.makedirs(target_dir, exist_ok=True)
